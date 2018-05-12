@@ -1,0 +1,30 @@
+{
+  "name": "is-lib",
+  "version": "1.0.0",
+  "description": "Simple predicates",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Awpatterson217/is-lib.git"
+  },
+  "keywords": [
+    "istypeof",
+    "isa",
+    "check",
+    "predicates",
+    "predicate",
+    "type",
+    "typeof",
+    "test",
+    "boolean"
+  ],
+  "author": "Adam W Patterson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Awpatterson217/is-lib/issues"
+  },
+  "homepage": "https://github.com/Awpatterson217/is-lib#readme"
+}
