@@ -29,7 +29,8 @@ const {
   isPrimitive,
   isNegative,
   isPositive,
-  isGlobalVal
+  isGlobalVal,
+  isAsync
 } = require('../');
 
 function myfunction() {
@@ -99,6 +100,11 @@ const myglobalvar = 'my global var';
 })();
 
 const mylocalvar = 'my local var';
+
+const myasyncfn = async function() {
+  const returnVal = await 1 + 2;
+  return returnVal;
+}
 
 assert(isArray(myarray), 'myarray should be an instance of Array');
 
@@ -170,3 +176,5 @@ assert(isGlobalVal(myglobalobj), 'myglobalvar should be global');
 assert(isGlobalVal(myglobalvar), 'myglobalvar should be global');
 assert(isGlobalVal(myglobalfunction), 'myglobalvar should be global');
 assert(!isGlobalVal(mylocalvar), 'mylocalvar should not be global');
+
+assert(isAsync(myasyncfn), 'myasyncfn should be an asynchronous function');

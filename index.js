@@ -33,6 +33,7 @@ const isBuffer      = require('./lib/isBuffer');
 const isNegative    = require('./lib/isNegative');
 const isPositive    = require('./lib/isPositive');
 const isGlobalVal   = require('./lib/isGlobal');
+const isAsync       = require('./lib/isAsync');
 
 module.exports = {
   isDate,
@@ -62,5 +63,6 @@ module.exports = {
   isBuffer,
   isNegative,
   isPositive,
-  isGlobalVal
+  isGlobalVal,
+  isAsync
 }
